@@ -1,0 +1,149 @@
+body {
+  background-color: #1b1b1b;
+}
+
+/* main */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* navbar */
+
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+}
+
+nav .logo span {
+  color: #ff4654;
+}
+
+nav .options {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .options p {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Container */
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+/* enter room popup */
+
+.enter-room {
+  width: min(40rem, 100% - 4rem);
+}
+
+.enter-room .settings {
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  overflow: hidden;
+  border-radius: 5px;
+  align-items: center;
+  background-color: aliceblue;
+  display: flex;
+}
+
+.enter-room .msg {
+  margin-top: 5px;
+  display: block;
+  color: gainsboro;
+  font-weight: 200;
+}
+
+.enter-room input {
+  border: 0;
+  background-color: transparent;
+  padding: 0.5rem;
+  flex: 1;
+  outline: 0;
+  color: black;
+  font-size: 1rem;
+}
+.enter-room button {
+  background-color: #ff4654;
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}
+
+.enter-room button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.enter-room button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #ff4654;
+  background-color: #1b1b1b;
+}
+
+/* chat */
+
+.chat-screen {
+  align-self: stretch;
+  width: 100%;
+  margin: 0 1rem;
+  background-color: honeydew;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-screen .title {
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.chat-screen .chat-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+
+.chat-container .chats {
+  flex: 1;
+}
+.chat-container .chat-controls {
+  display: flex;
+}
+
+.chat-container .chat-controls #chat 
+{
+  flex: 3;
+}
+
+.chat-container .chat-controls #enc 
+{
+  flex: 1;
+  margin-left: 2rem;
+} 
